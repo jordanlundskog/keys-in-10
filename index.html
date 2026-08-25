@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<title>Keys in 10 — Piano Coach</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="logo">♬</span><div><strong>Keys in 10</strong><small>Piano literacy coach</small></div></div></header>
+<main>
+<section id="home" class="screen active">
+<div class="hero card"><div><span class="eyebrow">60–90 DAY PATH</span><h1>Learn to read music.<br>Then play songs.</h1><p>Short, focused lessons designed for a real piano in front of you. The core lesson is about 10 minutes; optional practice can take you further.</p></div><div class="day-orb"><span>DAY</span><b id="dayNumber">1</b><small>of 90</small></div></div>
+<div class="grid two"><div class="card lesson-card"><div class="card-head"><div><span class="eyebrow">TODAY</span><h2 id="todayTitle">Start with the keyboard + staff</h2></div><span class="time">~10 min</span></div><p id="todayDesc">Connect what you see on the staff to the keys under your hands.</p><button class="primary" id="startLesson">Start today's lesson →</button><button class="textbtn" id="resetBtn">Reset progress</button></div><div class="card"><span class="eyebrow">YOUR TARGET</span><h2>Recognizable songs</h2><p>Build note-reading, rhythm, melody, left-hand accompaniment, and pattern recognition.</p><div class="mini-stats"><div><b id="noteScore">—</b><span>note reading</span></div><div><b id="rhythmScore">—</b><span>rhythm</span></div><div><b id="songCount">0</b><span>songs practiced</span></div></div></div></div>
+<div class="card"><div class="card-head"><div><span class="eyebrow">90-DAY ROADMAP</span><h2>What you're building</h2></div></div><div id="roadmap" class="roadmap"></div></div>
+</section>
+<section id="lesson" class="screen"><div class="lesson-top"><button class="back" id="backHome">← Home</button><div><span class="eyebrow">DAY <span id="lessonDay">1</span></span><h1 id="lessonTitle">Today's lesson</h1></div><div class="timer" id="timer">10:00</div></div><div class="progressbar"><div id="lessonProgress"></div></div><div id="lessonStep" class="lesson-step card"></div><div class="lesson-nav"><button class="secondary" id="prevStep">← Back</button><button class="primary" id="nextStep">Next →</button></div></section>
+<section id="songs" class="screen"><div class="page-head"><div><span class="eyebrow">SONG LAB</span><h1>Start making music.</h1><p>Begin with simple public-domain melodies.</p></div><button class="back" id="songsHome">← Home</button></div><div id="songGrid" class="song-grid"></div></section>
+<section id="progress" class="screen"><div class="page-head"><div><span class="eyebrow">ASSESSMENT</span><h1>What you can do</h1><p>The app tracks evidence from drills and tests.</p></div><button class="back" id="progressHome">← Home</button></div><div class="grid three" id="metricCards"></div><div class="card"><span class="eyebrow">RECENT RESULTS</span><div id="results"></div></div></section>
+</main><nav class="bottom-nav"><button class="nav active" data-screen="home">⌂<span>Today</span></button><button class="nav" data-screen="songs">♫<span>Songs</span></button><button class="nav" data-screen="progress">◔<span>Progress</span></button></nav><div id="toast" class="toast"></div><script src="app.js"></script></body></html>
